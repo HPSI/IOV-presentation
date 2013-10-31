@@ -1,0 +1,16 @@
+Cloud computing infrastructures provide vast processing power and host a
+diverse set of computing workloads, ranging from service-oriented deployments
+to HPC applications. As HPC applications scale to a large number of VMs,
+providing near-native network I/O performance to each peer VM is an important
+challenge. To deploy communication-intensive applications in the cloud, we have
+to fully exploit the underlying hardware, while at the same time retaining the
+benefits of virtualization: consolidation, flexibility, isolation, and ease of
+management. Current approaches present either limited performance or require
+specialized hardware that increases the complexity of the setup.
+
+In this talk we present an overview of current approaches on I/O (software and
+hardware) in two of the most popular open-source virtualization platforms: Xen
+and KVM. We walk through the I/O stack, focusing on network communication
+intra-node as well as inter-node. To illustrate the caveats and benefits of
+each approach we use the paradigm of a VM-aware interconnection protocol over
+generic Ethernet.
